@@ -1,0 +1,48 @@
+:root{
+    --main-light-brown: #F0E5CF;
+    --main-cream-color: #F7F6F2;
+    --main-light-blue: #C8C6C6;
+    --main-blue-color: #4B6587;
+    --main-dark-blue: #2b3a4e;
+}
+*{
+    font-family: 'Patua One', 'Open sans ';
+}
+body{
+    background-color: var(--main-blue-color);
+}
+.carousel-item img{
+    height: 95%;
+    margin: 10px 0;
+    border-radius: 100%;
+}
+i img{
+    height: 40px;
+    margin: 0 15px;
+}
+.navbar-brand{
+    display: flex;
+}
+nav{
+    border-radius: 10px;
+    margin: 10px 3px;
+}
+h2{
+    margin-top: 100px;
+    text-align: center;
+    color: var(--main-cream-color);
+}
+h1{
+    margin: auto;
+}
+.navbar button{
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+    .nav-item a{
+        margin-top: 23px;
+    }
+    
+}
