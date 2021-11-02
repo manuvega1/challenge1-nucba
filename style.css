@@ -37,7 +37,8 @@ nav{
     margin: 10px 3px;
 }
 h2{
-    margin: 20px;
+    margin: 40px;
+    font-size: 2em;
     text-align: center;
     color: var(--main-cream-color);
 }
@@ -47,6 +48,46 @@ h1{
 .navbar button{
     margin: 0 5px;
     border-radius: 10px;
+}
+.aside h3{
+    text-align: center;
+    color: var(--main-blue-color);
+    margin: 30px 10px;
+}
+.aside-ads{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.aside-ads img{
+    width: 105px;
+    border-radius: 5px;
+    max-height: 100px;
+}
+.aside-ads li{
+    list-style: none;
+    margin: 10px 5px;
+}
+.aside{
+    margin: 30px 15px;
+    border-top: var(--main-light-blue) solid 1px;
+    background-color: var(--main-light-blue);
+    border-radius: 10px;
+}
+.footer{
+    border-top: 1px solid var(--main-light-blue);
+    margin: 10px;
+    opacity: 50%;
+}
+.copy {
+    text-align: center;
+    color: var(--main-light-blue);
+    font-size: 0.7rem;
+    opacity: 50%;
+    margin-top: 20px;
 }
 
 @media (min-width: 768px) {
