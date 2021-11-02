@@ -11,6 +11,15 @@
 body{
     background-color: var(--main-blue-color);
 }
+.portada {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: var(--main-dark-blue);
+    background-image: url(./assets/pc-background-mobile.jpg);
+    background-position: center;
+    height: 660px;
+}
 .carousel-item img{
     height: 95%;
     margin: 10px 0;
@@ -28,7 +37,7 @@ nav{
     margin: 10px 3px;
 }
 h2{
-    margin-top: 100px;
+    margin: 20px;
     text-align: center;
     color: var(--main-cream-color);
 }
@@ -38,6 +47,14 @@ h1{
 .navbar button{
     margin: 0 5px;
     border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .portada{
+        background-image: url(./assets/pc-background-1024.jpg);
+        background-position: center;
+        height: 800px;
+    }
 }
 
 @media (min-width: 1024px) {
