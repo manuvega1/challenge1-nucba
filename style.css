@@ -21,6 +21,8 @@ body {
     color: var(--main-dark-blue);
     background-image: url(./assets/pc-background-mobile.jpg);
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     height: 660px;
 }
 
@@ -199,6 +201,170 @@ li p {
     text-decoration: none;
     color: var(--main-cream-color);
 }
+
+/* --- contact --- */
+
+.contact{
+    text-align: center;
+}
+.contact ul{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+.contact li{
+    list-style: none;
+}
+.contact i{
+    color: var(--main-dark-blue);
+}
+.contact h2{
+    font-size: 1.5em;
+    margin-top: 100px;
+}
+.contact h3{
+    margin: 25px;
+    color: var(--main-cream-color);
+}
+.contact li{
+    margin: 10px 20px;
+}
+.contact i{
+    color: var(--main-cream-color);
+}
+
+/* --- about us --- */
+
+.about-us{
+    text-align: center;
+    margin-top: 100px;
+    color: var(--main-cream-color);
+}
+.about-us h1{
+    margin: 20px;
+}
+.about-us img{
+    width: 300px;
+}
+.about-us p{
+    margin: 30px 5px;
+}
+
+/* --- login --- */
+
+.login{
+    background-color: var(--main-dark-blue);
+    margin: 20px;
+    padding: 30px 5px;
+    border-radius: 30px;
+}
+.login div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login img{
+    width: 150px;
+    margin: 30px;
+}
+.login label{
+    margin: 10px;
+}
+.form-item input{
+    width: 200px;
+    border-radius: 40px;
+    border-style: none;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-cream-color);
+}
+.form button{
+    border-style: none;
+    border-radius: 40px;
+    width: 200px;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.form ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.form li{
+    margin: 10px;
+}
+.form a{
+    color: var(--main-cream-color);
+    text-decoration: none;
+}
+
+/* --- register --- */
+
+.register{
+    background-color: var(--main-dark-blue);
+    margin: 20px;
+    padding: 30px 5px;
+    border-radius: 30px;
+}
+.register div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.register img{
+    width: 100px;
+    margin: 10px;
+}
+.register label{
+    margin: 5px;
+}
+.reg-item input{
+    width: 200px;
+    border-radius: 40px;
+    border-style: none;
+    text-align: center;
+}
+.form-reg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-cream-color);
+}
+.form-reg button{
+    border-style: none;
+    border-radius: 40px;
+    width: 200px;
+    margin: 20px;
+}
+.reg-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.form-reg ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.form-reg li{
+    margin: 10px;
+}
+.form-reg a{
+    color: var(--main-cream-color);
+    text-decoration: none;
+}
+
 
 @media (min-width: 768px) {
     .portada {
