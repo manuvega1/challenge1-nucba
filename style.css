@@ -124,6 +124,7 @@ h1 {
     background-color: white;
     margin: 20px 25px;
     border-radius: 10px;
+    text-align: center;
 }
 
 .products ul {
@@ -139,12 +140,21 @@ li p {
     text-decoration: none;
     color: var(--main-dark-blue);
 }
+.product-price{
+    background-color: var(--main-dark-blue);
+    color: var(--main-cream-color);
+    border-radius: 20px;
+}
+.product-item{
+    padding: 15px 10px;
+}
 
 /* --- item page --- */
 
 .item-photo {
     width: 95%;
     margin-top: 100px;
+    border-radius: 5px;
 }
 
 .item-menu {
@@ -245,6 +255,7 @@ li p {
 }
 .about-us img{
     width: 300px;
+    border-radius: 10px;
 }
 .about-us p{
     margin: 30px 5px;
@@ -365,6 +376,43 @@ li p {
     text-decoration: none;
 }
 
+@media (min-width: 375px) {
+    .aside-ads img{
+        width: 150px;
+        max-height: none;
+    }
+    .about-us img{
+        width: 350px;
+    }
+    .contact iframe{
+        width: 350px;
+    }
+    .contact i{
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 425px) {
+    .aside-ads img{
+        margin: 10px;
+    }
+    .product-price{
+        font-size: 1.6em;
+    }
+    .name-product{
+        font-size: 1.7em;
+    }
+    .item-menu button{
+        font-size: 1.5em;
+        padding: 5px;
+    }
+    .item-menu img{
+        width: 350px;
+    }
+    .login img{
+        width: 190px;
+    }
+}
 
 @media (min-width: 768px) {
     .portada {
@@ -372,11 +420,144 @@ li p {
         background-position: center;
         height: 800px;
     }
+    .carousel-item img{
+        height: 500px;
+        max-width: 500px;
+        margin: auto;
+    }
+    .aside img{
+        width: 280px;
+        margin: 35px;
+    }
+    .product-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .products img{
+        width: 200px;
+    }
+    .product-item{
+        width: 300px;
+        max-height: 350px;
+    }
+    .name-product{
+        font-size: 1.3em;
+    }
+    .product-price{
+        font-size: 1.2em;
+    }
+    .item-menu{
+        display: flex;
+        margin: 80px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-menu img{
+        margin: 0;
+    }
+    .item-menu h2{
+        font-size: 1.8em;
+    }
+    .item-price{
+        font-size: 1.5em;
+    }
+    .about-us img{
+        width: 600px;
+    }
+    .about-us p{
+        font-size: 1.2em ;
+    }
+    .about-us h1{
+        font-size: 2.5em;
+    }
+    .login{
+        margin: 70px;
+    }
+    .form-item input{
+        width: 350px;
+    }
+    .form{
+        font-size: 1.2em;
+    }
+    .form button{
+        width: 400px;
+    }
+    .register{
+        margin: 30px;
+        font-size: 1.2em;
+    }
+    .register input{
+        width: 500px;
+    }
+    .contact iframe{
+        width: 600px;
+        height: 500px;
+    }
+    .contact h2{
+        font-size: 2em;
+        margin: 70px;
+        margin-top: 120px;
+    }
+    .contact i{
+        font-size: 2em;
+        margin: 10px 25px;
+    }
 }
 
 @media (min-width: 1024px) {
-    .nav-item a {
+    nav h1:hover{
+        opacity: 80%;
+        transition: 1s;
+    }
+    .navbar i{
+        opacity: 80%;
+        transition: 1s;
+    }
+    .nav-link {
         margin-top: 23px;
     }
-
+    .nav-link:hover{
+        color: black;
+        transition: 1s;
+    }
+    .index-title{
+        font-size: 3em;
+    }
+    .aside img{
+        width: 160px;
+    }
+    .aside{
+        height: 300px;
+        padding: 0;
+        margin: 50px 10px;
+    }
+    .aside h3{
+        margin: 10px;
+    }
+    .aside img:hover{
+        opacity: 80%;
+        transition: 1s;
+    }
+    .products img{
+        width: 220px;
+    }
+    .product-item{
+        width: 400px;
+        height: 600px;
+        margin: 50px 20px;
+    }
+    .product-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .product-price{
+        width: 300px;
+    }
+    .product-item:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
 }
