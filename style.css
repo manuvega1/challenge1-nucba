@@ -14,6 +14,10 @@ body {
     background-color: var(--main-blue-color);
 }
 
+.inline{
+    display: none;
+}
+
 .portada {
     text-align: center;
     padding: 0;
@@ -21,9 +25,11 @@ body {
     color: var(--main-dark-blue);
     background-image: url(./assets/pc-background-mobile.jpg);
     background-position: center;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 660px;
+    width: 100%;
 }
 
 .carousel-item img {
@@ -506,26 +512,64 @@ li p {
 }
 
 @media (min-width: 1024px) {
-    nav h1:hover{
-        opacity: 80%;
-        transition: 1s;
+    .navbar{
+        display: none;
     }
-    .navbar i{
-        opacity: 80%;
-        transition: 1s;
+    .portada{
+        background-image: url(./assets/usando-pc-4k.jpg);
     }
-    .nav-link {
-        margin-top: 23px;
+    .inline{
+        display: flex;
+        background-color: var(--main-cream-color);
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000000;
     }
-    .nav-link:hover{
+    .icon a{
+        display: flex;
+        text-decoration: none;
         color: black;
+    }
+    .icon img{
+        width: 60px;
+        height: 60px;
+    }
+    .content-inline{
+        margin: 0;
+        padding: 0;
+        line-height: 80px;
+    }
+    .content-inline ul{
+        display: flex;
+        padding: 10px;
+        margin: 0;
+    }
+    .content-inline li{
+        list-style: none;
+        margin: 0 25px;
+    }
+    .content-inline a{
+        text-decoration: none;
+        color: black;
+    }
+    .content-inline li:hover , .icon:hover{
+        opacity: 80%;
+        transform: scale(1.1);
         transition: 1s;
+    }
+    .content-inline a , .icon{
+        transition: 0.5s;
     }
     .index-title{
         font-size: 3em;
     }
     .aside img{
         width: 160px;
+        transition: 1s;
     }
     .aside{
         height: 300px;
@@ -537,6 +581,7 @@ li p {
     }
     .aside img:hover{
         opacity: 80%;
+        transform: scale(1.1);
         transition: 1s;
     }
     .products img{
@@ -559,5 +604,71 @@ li p {
     .product-item:hover{
         transform: scale(1.1);
         transition: 1s;
+    }
+    .item-menu img{
+        width: 420px;
+    }
+    .item-menu{
+        margin-top: 140px;
+    }
+    .about-us h1{
+        margin: 40px;
+        margin-top: 120px;
+    }
+    .login button:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 1s;
+    }
+    .contact i:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 1s;
+    }
+}
+@media (min-width: 1440px) {
+    .inline{
+        height: 100px;
+    }
+    .icon img{
+        height: 90px;
+        width: 90px;
+    }
+    .icon h1{
+        font-size: 3em;
+    }
+    .content-list {
+        font-size: 1.5em;
+    }
+    .aside img{
+        width: 200px;
+        margin: 20px 40px;
+    }
+    .aside h3{
+        font-size: 2.5em;
+    }
+    .aside{
+        height: 350px;
+    }
+    .main-products h2{
+        margin-top: 150px;
+        font-size: 3em;
+    }
+    .product-item{
+       width: 40%;
+       height: 500px;
+    }
+    .product-item img{
+        width: 250px;
+        max-height: 250px;
+    }
+    .product-item p{
+        font-size: 1.4em;
+    }
+    .item-menu img{
+        width: 75%;
+    }
+    .item-features li{
+        font-size: 1.5em;
     }
 }
